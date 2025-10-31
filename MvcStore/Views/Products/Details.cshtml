@@ -1,0 +1,15 @@
+﻿@model MvcStore.Models.Product
+
+<body dir="rtl">
+
+<h2 class="mb-lg-5">مشخصات محصول</h2>
+
+<ul>
+    <li class="mb-5"><b>نام :  </b>@Model.Name</li>
+    <li class="mb-5"><b>قیمت :  </b>@Model.Price</li>
+    <li class="mb-5"><b>نوع :  </b>@Model.Type</li>
+    <li class="mb-5"><b>تعداد :  </b>@Model.Quantity</li>
+</ul>
+
+    <a type="button" class="btn btn-danger icon-link" href="/Products/Index">بازگشت به لیست</a>
+</body>
