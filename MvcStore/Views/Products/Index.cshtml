@@ -10,6 +10,7 @@
             <th>قیمت</th>
             <th>تعداد</th>
             <th>جزئیات</th>
+            <th>بروزرسانی</th>
         </tr>
     </thead>
     <tbody>
@@ -22,6 +23,7 @@
                 <td>@Model[i].Price</td>
                 <td>@Model[i].Quantity</td>
                 <td><a href="/Products/Details/@Model[i].Id" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-10-hover">مشاهده</a></td>
+                <td><a href="/Products/Edit/@Model[i].Id" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-10-hover">ویرایش</a></td>
             </tr>   
         }
     </tbody>

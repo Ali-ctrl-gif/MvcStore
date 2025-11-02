@@ -1,22 +1,20 @@
 ﻿@model MvcStore.Models.Product
 
-<h2>افزودن محصول جدید</h2>
-
-<form asp-action="Add" method="post">
-    <div class="form-group">
-        <label>نام محصول</label>
-        <input asp-for="Name" class="form-control" />
+<form action="Add" method="post">
+    <div class="form-group mb-5">
+        <label class="mb-3">نام محصول</label>
+        <input asp-for="Name" class="form-control"/>
     </div>
-    <div class="form-group">
-        <label>نوع محصول</label>
+    <div class="form-group mb-5">
+        <label class="mb-3">نوع محصول</label>
         <input asp-for="Type" class="form-control" />
     </div>
-    <div class="form-group">
-        <label>قیمت</label>
+    <div class="form-group mb-5">
+        <label class="mb-3">قیمت محصول</label>
         <input asp-for="Price" class="form-control" />
     </div>
-    <div class="form-group">
-        <label>تعداد</label>
+    <div class="form-group mb-5">
+        <label class="mb-3">تعداد محصول</label>
         <input asp-for="Quantity" class="form-control" />
     </div>
     <button type="submit" class="btn btn-success mt-2">ذخیره</button>
